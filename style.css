@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.icons{
+    padding-right: 15px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul, .sidebar h3, .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li, .sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a, .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a.active {
+    font-weight: bold;
+}
+
+.sidebar nav ul li a:hover, .sidebar ul li a:hover {
+    color: #007bff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#product-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-info {
+    padding: 10px;
+}
+
+.book-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.book-info p {
+    margin: 0;
+    color: #666;
+}
+
+.genre {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
